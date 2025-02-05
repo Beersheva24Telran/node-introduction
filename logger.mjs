@@ -4,6 +4,7 @@ import { EventEmitter } from "node:events";
 class Logger extends EventEmitter {
   #logger;
   constructor() {
+    super();
     this.#logger = winston.createLogger({
       level: process.env.LEVEL ?? "info",
       format: winston.format.simple(),
