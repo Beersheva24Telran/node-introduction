@@ -11,7 +11,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\index.mjs",
+            "program": "${workspaceFolder}\\src\\controller\\index.mjs",
             "env": {
                 "LEVEL":"debug"
             }
