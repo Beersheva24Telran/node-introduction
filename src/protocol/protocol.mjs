@@ -1,3 +1,6 @@
+/*
+here should be the code for actual protocol
+*/
 const protocolObj= {
        "/addPoint": addPoint,
        "/getPoint": getPoint

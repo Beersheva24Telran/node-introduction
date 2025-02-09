@@ -1,3 +1,6 @@
+ /* 
+ here should be actual service code
+ */
  class PointService {
     #points
     constructor() {
