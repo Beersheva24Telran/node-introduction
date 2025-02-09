@@ -5,10 +5,10 @@ export default class PrototypeProtocol  {
         server.on('/addPoint', (data, res) => {
                 try {
                     this.#service.addPoint(JSON.parse(data));
-                    res.statuseCode=204;
+                    res.statusCode=204;
                     res.end();
                 } catch (error) {
-                    res.statuseCode=400;
+                    res.statusCode=400;
                     res.end();
                 }
         })
@@ -18,7 +18,7 @@ export default class PrototypeProtocol  {
                 res.write(JSON.stringify(point));
                 res.end()
             } catch (error) {
-                res.statuseCode=404
+                res.statusCode=404
                 res.end();
             };
         })
